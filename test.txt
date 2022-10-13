@@ -21,6 +21,9 @@ public class OrderController {
     @AutoWired
     private PaymentService paymentService = new PaymentServiceImpl();
 
+    @AutoWired
+    private PaymentService paymentService2 = new PaymentServiceImpl();
+
     @Autowired
     private RestTemplate restTemplate;
 
