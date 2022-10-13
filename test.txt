@@ -22,6 +22,7 @@ public class OrderController {
     private PaymentService paymentService = new PaymentServiceImpl();
 
     @AutoWired
+
     private PaymentService paymentService3 = new PaymentServiceImpl();
 
     @Autowired
