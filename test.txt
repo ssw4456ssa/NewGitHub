@@ -16,6 +16,12 @@ public class OrderController {
     public static final String PAYMENT_URL = "http://mcroservice-payment";
 
     @Autowired
+    private OrderService orderService = new OrderServiceImpl();
+
+    @AutoWired
+    private PaymentService paymentService = new PaymentServiceImpl();
+
+    @Autowired
     private RestTemplate restTemplate;
 
     //创建支付订单的接口
